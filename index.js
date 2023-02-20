@@ -10,6 +10,10 @@ app.use("/users",userRouter)
 app.use(authenticate)
 app.use("/posts",postRouter)
 
+app.get("/",(req,res)=>{
+    res.send("HOME PAGE")
+})
+
 
 
 
